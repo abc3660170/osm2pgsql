@@ -9,4 +9,5 @@ RUN cmake ..
 RUN make
 RUN make install
 RUN osm2pgsql -version; exit 0
+RUN rm -rf /usr/local/src/osm2pgsql
 
